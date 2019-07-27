@@ -14,7 +14,7 @@ let getRandomListing = function(loadedListings) {
 
 let changeListingImage = function(listing) {
     let url = listing.get("itemImage")._url;
-    listingImage.style.background = `url(${url})`;
+    listingImage.style.background = `url(${url}) center`;
 }
 
 let changeProfilePic = function(user) {
@@ -41,6 +41,7 @@ let changeDescriptionText = function(listing) {
 
 let listingImage = document.getElementById("listing-image");
 let nextButton = document.getElementById("rightButton");
+let shopitButton = document.getElementById("leftButton");
 let profilePic = document.getElementById("profilePic");
 let descriptionText = document.getElementById("descriptionText");
 let loadedListings = loadListings();
@@ -60,9 +61,14 @@ let nextListing = function()  {
     });
 }
 
-
 nextButton.addEventListener("click", nextListing);
 console.log(loadedListings);
+
+shopitButton.addEventListener("click", () =>{
+    window.prompt("Please enter bid: ");
+    window.alert("Your bid has been recorded");
+    nextListing();
+});
 
 /*let listing0 = {
     listingNo: 0,

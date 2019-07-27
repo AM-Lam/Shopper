@@ -64,7 +64,7 @@ async function getBuyerBargains(buyer) {
     var query = new Parse.Query(Bargains);
     query.equalTo("buyer", buyer);
     const results = await query.find();
-    alert("Successfully retrieved " + results.length + " scores.");
+    //alert("Successfully retrieved " + results.length + " scores.");
     // Do something with the returned Parse.Object values
     // for (let i = 0; i < results.length; i++) {
     //     var object = results[i];
