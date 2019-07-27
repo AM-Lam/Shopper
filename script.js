@@ -1,18 +1,25 @@
 let listingImage = document.getElementById("listing-image");
 
-let nextListing = function() {
+let loadListings = function() {
     let listings = [];
     getListings().then(result => {
         for (let i = 0; i < result.length; i++) {
             listings.push(result[i]);
         }
     });
-    console.log(listings);
+    return listings;
 }
 
-let changeListingImage = function(listing) {
-    let imgNum = listing.listingNo;
-    listingImage.style.background = `url("./clothes${imgNum}.jpg")`;
+let nextListing = function(loadedListings) {
+    let randomListing = loadedListings[Math.floor(Math.random() * (loadedListings.length - 1))];
+    console.log(randomListing.get("itemImage"));
+    console.log("................");
+    let url = randomListing.get("itemImage")._url;
+    changeListingImage(url);
+}
+
+let changeListingImage = function(url) {
+    listingImage.style.background = `url(${url})`;
 }
 
 let changeUserDetails = function(listing) {
@@ -22,8 +29,9 @@ let changeUserDetails = function(listing) {
     username.innerText = listing.userName;
 }
 
+let loadedListings = loadListings();
 listingImage.addEventListener("click", event => {
-    nextListing();
+    nextListing(loadedListings);
 });
 
 /*let listing0 = {

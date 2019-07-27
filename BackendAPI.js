@@ -36,7 +36,7 @@ async function getListings() {
     const Listings = Parse.Object.extend("Listings");
     var query= new Parse.Query(Listings);
     const results = await query.find();
-    alert("Successfully retrieved " + results.length + " scores.");
+    //alert("Successfully retrieved " + results.length + " scores.");
     // Do something with the returned Parse.Object values
     // for (let i = 0; i < results.length; i++) {
     //     var object = results[i];
