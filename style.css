@@ -13,11 +13,29 @@ body {
 }
 
 #logo {
-    width: 100px;
-    height: 100px;
+    width: 10%;
+    height: 100%;
     align-self: left;
-    background: url("./logo.svg");
+    margin-right: 10px;
+    overflow: hidden;
+    float: left;
 }
+
+#toolbar-options {
+    overflow: hidden;   
+    background-color: blue;
+}
+
+#user {
+    align-self: right;
+    margin-left: 90%; 
+    width: 10%;
+    height:100%;
+    background-color: azure;
+    overflow: hidden;
+}
+
+
 
 #listing-image {
     background: url("./clothes.jpg");
