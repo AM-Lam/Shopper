@@ -1,0 +1,105 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #E0E0E0;
+    margin: 0;
+    font-family: Open Sans, Arial, sans-serif;
+    overflow: hidden;
+}
+
+#toolbar {
+    width: 100%;
+    height: 7vh;
+    margin: 0px;
+    padding: 0px;
+    background-color:#ff8f00;
+}
+
+#logo {
+    width: 10%;
+    height: 100%;
+    align-self: left;
+    margin-right: 10px;
+    overflow: hidden;
+    float: left;
+}
+
+#logo-img {
+    position: relative;
+}
+
+#user {
+    align-self: right;
+    margin-left: 70%; 
+    width: 30%;
+    height: 100%;
+    overflow: hidden;
+}
+
+ul#horizontal-list {
+	min-width: 200px;
+    list-style: none;
+}
+
+ul#horizontal-list li {
+    display: inline;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.halfbar {
+    height: 100%;
+    width: 50%;
+    float: left;
+    background-color: #EEEEEE;
+}
+
+.thirdbar {
+    border-bottom-color: #ffc046;
+    border-bottom-style: solid;
+    position: relative;
+    height: 243px;
+    width: 100%;
+}
+
+#listing-image {
+    background: url("./clothes1.jpg");
+    height: 732px;
+} 
+
+.userprofile {
+    margin-top: 35px;
+    margin-left: 50px;
+    height: 100px;
+    width: 100px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#bottombar {
+    height: 220px;
+    width: 100%;
+    background-color: #c56000;
+    margin-top: 547px;
+}
+
+#squares {
+    display: block;
+    float: middle;
+    margin: auto;
+
+    width: 500px;
+    height: 100px;
+    border: 3px solid goldenrod;
+    background: lightsalmon;
+}
+
+#button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
