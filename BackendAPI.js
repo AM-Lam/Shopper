@@ -36,7 +36,7 @@ async function getListings() {
     const Listings = Parse.Object.extend("Listings");
     var query= new Parse.Query(Listings);
     const results = await query.find();
-    //alert("Successfully retrieved " + results.length + " scores.");
+    alert("Successfully retrieved " + results.length + " scores.");
     // Do something with the returned Parse.Object values
     // for (let i = 0; i < results.length; i++) {
     //     var object = results[i];
@@ -78,7 +78,7 @@ function addListing(name, description, image, seller, minPrice, maxPrice) {
     listing.save({
         itemName: name,
         itemDesc: description,
-        itemImage: image,
+        itemImage:image,
         seller: seller,
         minPrice: minPrice,
         maxPrice: maxPrice
@@ -98,4 +98,20 @@ function getImageURLFromObject(imageObject) {
 
 function getImageObjectFromFile(name,file) {
     return new Parse.File(name, file);
+}
+
+function getUserObject(objectId) {
+    var User = new Parse.Object("User");
+    var query = new Parse.Query(User);
+    var result;
+    query.get(objectId).then((user) => {
+        result = user;
+    }, (error) => {
+        alert('Failed to create new object, with error code: ' + error.message);
+    });
+    return result;
+}
+
+function getSellerObject(userObject) {
+    return userObject.get("sellerNumber");
 }
