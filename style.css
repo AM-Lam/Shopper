@@ -1,5 +1,5 @@
 body {
-    width: 100%;
+    width: 98%;
     height: 100%;
 }
 
@@ -8,8 +8,13 @@ body {
     height: 50px;
 }
 
+.halfbar {
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
 #listing-image {
-    background: url("./clothes.jpg");
-    width: 500px;
+    background: url("./clothes1.jpg");
     height: 600px;
 } 
