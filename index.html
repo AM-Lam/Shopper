@@ -7,15 +7,39 @@
     <title>Shopper</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <Meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
  </head>
 <body> 
-    <div id="toolbar"></div>
+    <div id="toolbar">
+        <div id="logo">
+            <img class="logo-img" src="logo.svg" alt="">
+        </div>
+
+        <div id="user">
+            <ul id="horizontal-list">
+                <li>Listings</li>
+                <li>History</li>
+                <li><img src="profile.jpg" alt="Profile"></li>
+            </ul>
+        </div>
+    </div>
+    
     <div class="halfbar" id="leftbar">
         <div id="listing-image"></div>
     </div>
     <div class="halfbar" id="rightbar">
-        
+        <div class="thirdbar" id="seller-info">
+            <div class="userprofile"></div>
+            <div class="userdetails" id="username">Name</div>
+        </div>
+        <div class="thirdbar" id="listing-description">Listing Description</div>
+        <div class="thirdbar" id="buttons" style="border-bottom-style:none">
+            <button type="button" id="leftButton">Heart</button>
+            <button type="button" id="rightButton">Next Listing</button>
+        </div>
     </div>
+    <div id="bottombar"></div>
 </body>
 <script src="script.js"></script>
 
