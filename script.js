@@ -1,9 +1,13 @@
 let listingImage = document.getElementById("listing-image");
 
 let nextListing = function() {
-    let randomListing = listings[Math.floor(Math.random() * 2)];
-    changeListingImage(randomListing);
-    changeUserDetails(randomListing);
+    let listings = [];
+    getListings().then(result => {
+        for (let i = 0; i < result.length; i++) {
+            listings.push(result[i]);
+        }
+    });
+    console.log(listings);
 }
 
 let changeListingImage = function(listing) {
@@ -22,7 +26,7 @@ listingImage.addEventListener("click", event => {
     nextListing();
 });
 
-let listing0 = {
+/*let listing0 = {
     listingNo: 0,
     userColor: "blue",
     userName: "Joe Smith"
@@ -34,4 +38,4 @@ let listing1 = {
     userName: "John Smith"
 }
 
-let listings = [listing0, listing1];
+let listings = [listing0, listing1];*/
