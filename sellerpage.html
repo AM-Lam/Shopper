@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Shopper</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="sellerpage.css">
+    <link rel="stylesheet" href="nav.css">
+    <Meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+ </head>
+<body> 
+    
+    <div id="toolbar">
+        <div id="logo">
+            <img class="logo-img" src="logo.svg" alt="">
+        </div>
+
+        <div id="user">
+            <ul id="horizontal-list">
+                <li>Listings</li>
+                <li>History</li>
+                <li><img src="profile.jpg" alt="Profile"></li>
+            </ul>
+        </div>
+    </div>
+    
+    </div><input type="checkbox" id="nav-trigger" class="nav-trigger" />
+    <label for="nav-trigger" class="navicon-button x">
+    <div class="navicon"></div>
+    </label>
+    <label for="nav-trigger" class="overlay"></label>
+
+    <nav>
+        //buyer
+        <li class="nav-link nav-home-link">
+            //change the link
+            <a href="index.html">Home</a>
+        </li>
+        <li class="nav-heading">user</li>
+        <li class="nav-heading">
+            <span class="nav-item-type type-class">C</span>
+            <span class="nav-item-name">
+                <a href="Parse.html">buyer</a>
+            </span>
+        </li>
+        //seller
+        <li class="nav-item">
+            <span class="nav-item-type type-function">F</span>
+            <span class="nav-item-name">
+                <a href="Parse.html#.initialize">seller</a>
+            </span>
+        </li>
+    </nav>   
+    <h1 align="center">Art Name
+        <div class="listImage" id="image">
+            //get it from some input
+            <img src="clothes0.jpg" alt="clotheSample">
+        </div>
+    </h1>
+    
+
+    <div id='main_content' style="overflow:auto; height: 800px;">
+
+    <div class="art" id="artpiece">
+        <div id="innnercontainer1">
+                <div class="buyerName" id="buyer">
+                        <div><b>buyerName</b></div>
+                </div>
+                <div class="location" id="location"><b>location</b></div>
+                <div>
+                        <div class="time" id="time"><b>time</b></div>
+                </div>
+        </div>
+        <div id="innnercontainer2">
+                <div class="pricetage" id="squares">
+                        <div><b>Price:</b></div>
+                </div>
+        </div>
+        <div id="innnercontainer3">
+            <button class="mdc-button mdc-button--raised">Accept</button>
+        </div>
+        
+    </div>
+</body>
+<script type="module" src="sellerpage.js"></script>
+<script type="text/javascript" src="rowCreator.js"></script>
+
+</html>

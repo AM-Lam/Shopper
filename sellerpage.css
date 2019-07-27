@@ -1,0 +1,145 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #E0E0E0;
+    margin: 0;
+    font-family: Open Sans, Arial, sans-serif;
+    overflow: hidden;
+}
+
+#toolbar {
+    width: 100%;
+    height: 7vh;
+    margin: 0px;
+    padding: 0px;
+    background-color:#ff8f00;
+}
+
+#logo {
+    width: 10%;
+    height: 100%;
+    align-self: left;
+    margin-right: 10px;
+    overflow: hidden;
+    float: left;
+}
+
+#logo-img {
+    position: relative;
+}
+
+#user {
+    align-self: right;
+    margin-left: 70%; 
+    width: 30%;
+    height: 100%;
+    overflow: hidden;
+}
+
+ul#horizontal-list {
+	min-width: 200px;
+    list-style: none;
+}
+
+ul#horizontal-list li {
+    display: inline;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.halfbar {
+    height: 100%;
+    width: 50%;
+    float: left;
+    background-color: #EEEEEE;
+}
+
+.thirdbar {
+    border-bottom-color: #ffc046;
+    border-bottom-style: solid;
+    position: relative;
+    height: 243px;
+    width: 100%;
+}
+
+#listing-image {
+    background: url("./clothes1.jpg");
+    height: 732px;
+} 
+
+.userprofile {
+    margin-top: 35px;
+    margin-left: 50px;
+    height: 100px;
+    width: 100px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#bottombar {
+    height: 220px;
+    width: 100%;
+    background-color: #c56000;
+    margin-top: 547px;
+}
+
+#image {
+    display: grid;
+    background: url("./clothes0.jpg");
+    height: 200px;
+}
+
+#artpiece {
+    background: gray;
+    width: 75%;
+    margin-left: auto;
+    margin-right: 7%;
+    display: grid;
+    padding:2%;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 100%;
+    grid-template-areas: "left middle right";
+    font-display: bold;
+}
+
+#innercontainer1 {
+    background: gray;
+    grid-area: "left";
+    width: 100%;
+}
+
+#innercontainer2 {
+    background: gray;
+    grid-area: "middle";
+    width: 100%;
+}
+
+#innercontainer3 {
+    background: gray;
+    grid-area: "right";
+    width: 100%;
+}
+
+#squares {
+    display: inline-block;
+    margin: auto;
+    padding: 2%;
+    width: 80%;
+    border: 3px solid goldenrod;
+    background: lightsalmon;
+}
+#button {
+    padding-top: 4%;
+    display: grid;
+    grid-area: "button";
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.box {
+    float: left;
+}
