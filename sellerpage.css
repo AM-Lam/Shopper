@@ -11,33 +11,36 @@ body {
     width: 100%;
     height: 7vh;
     margin: 0px;
-    padding: 0px;
+    padding-bottom: 10px;
+    padding-top:10px;
     background-color:#ff8f00;
 }
 
 #logo {
-    width: 10%;
-    height: 100%;
+    width: 169px;
+    height: 7vh;
     align-self: left;
-    margin-right: 10px;
+    margin-left: 10px;
     overflow: hidden;
     float: left;
+    background: url('./gunyah.png') no-repeat center;
+    background-size: cover;
 }
 
-#logo-img {
-    position: relative;
+#logo:active {
+    background-image: url('./gunyah.png') no-repeat center;
 }
 
 #user {
     align-self: right;
-    margin-left: 70%; 
+    margin-left: 70%;
     width: 30%;
     height: 100%;
     overflow: hidden;
 }
 
 ul#horizontal-list {
-	min-width: 200px;
+    min-width: 200px;
     list-style: none;
 }
 
@@ -48,6 +51,7 @@ ul#horizontal-list li {
     margin-left: 20px;
     margin-right: 20px;
 }
+
 
 .halfbar {
     height: 100%;
@@ -98,7 +102,7 @@ img {
 }
 
 #listcolumn {
-    background: gray;
+    background: #4fc3f7;
     width: 100%;
     margin-left: auto;
     margin-bottom: 3%;

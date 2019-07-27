@@ -67,13 +67,13 @@ ul#horizontal-list li {
 }
 
 #listing-image {
-    background: url("./clothes1.jpg");
+    background: url("mp_323_large.jpg") center;
     height: 732px;
-    background-size: 100vw 100vh;
+    background-size: cover;
 } 
 
 #profilePic {
-    background-size: 100vw 100vh;
+    background-size: 100vh 100vw;
 }
 
 #descTextContainer {
@@ -160,9 +160,9 @@ ul#horizontal-list li {
     margin-top: 547px;
 }
 
-.material-icons{
+.material-icons.md60{
     height:100%;
-    width:100%; 
-
+    width:100%;
+    font-size: 60px;
 
 }

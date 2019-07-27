@@ -7,52 +7,62 @@
     <title>Shopper</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <Meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <Meta name="viewport" content="width = device-width, initial-scale = 1.0">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
- </head>
-<body> 
-    <div id="toolbar">
-        <div id="logo">
-        </div>
+</head>
+<body>
+<div id="toolbar">
+    <div id="logo">
+    </div>
 
-        <div id="user">
-            <ul id="horizontal-list">
-                <li>Listings</li>
-                <li>History</li>
-                <li>Profile</li>
-            </ul>
-        </div>
+    <div id="user">
+        <ul id="horizontal-list">
+            <li>
+            <li><a href="sellerpage.html" style="text-decoration:none;color:white">Listings</a></li>
+            </li>
+            <li>History</li>
+            <li>Profile</li>
+        </ul>
     </div>
-    
-    <div class="halfbar" id="leftbar">
-        <div id="listing-image"></div>
+</div>
+
+<div class="halfbar" id="leftbar">
+    <div id="listing-image"></div>
+</div>
+<div class="halfbar" id="rightbar">
+    <div class="thirdbar" id="seller-info">
+        <div class="userprofile" id="profilePic"></div>
+        <div class="userdetails" id="username">Timothy Cook</div>
     </div>
-    <div class="halfbar" id="rightbar">
-        <div class="thirdbar" id="seller-info">
-            <div class="userprofile"  id="profilePic"></div>
-            <div class="userdetails" id="username">First Name Last Name</div>
-        </div>
-        <div class="thirdbar" overflow-y="auto">
-            <div id="descriptionTitle">Item Description</div>
-            <div id="descTextContainer">
-            <p id="descriptionText">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-                culpa qui officia deserunt mollit anim id est laborum."
+    <div class="thirdbar" overflow-y="auto">
+        <div id="descriptionTitle">Item Description</div>
+        <div id="descTextContainer">
+            <p id="descriptionText">Born 1958 on Melville Island, Timothy Cook began paintings on canvas in the mid
+                1990s. At the start of his career he was one of a number of Tiwi artists who visited the South
+                Australian Museum in Adelaide to view the bark paintings on canvass collected by anthropologist Charles
+                Mountford during his National Geographic expedition to Melville Island in 1954. The visiting artists
+                were inspired to create contemporary responses and Cook quickly became one of the most radical
+                interpreters of these early Tiwi works.
+
+                The traditional Tiwi ceremony of kulama (or yam) is a recurrent subject in Cook’s work, and its circular
+                motif has several echoes in Tiwi culture. This ceremony is a coming-of-age ritual that occurs when the
+                kulama yams are harvested. It is performed in the early dry season around a circular fire-pit when a
+                conspicuous halo appears around the full moon.Elders of both sexes sing and dance for three days
+                welcoming the boys into adulthood. The boy is then renamed with his true man's name. The moon is a
+                potent metaphor for life and death in the Tiwi Islands. It is home to the adulterous Tapara from the
+                Tiwi mortuary narrative of Pukumani, which also features Purukapali, his wife Waiyai, and their baby son
+                Jinani.
             </p>
         </div>
-            <div id="minPrice">Min Price: $4.00</div>
-        </div>
-        <div class="thirdbar" id="buttons" style="border-bottom-style:none">
-            <button type="button" id="leftButton"></button>
-            <button type="button" id="rightButton"><i class="material-icons">highlight_off</i></button>
-        </div>
+        <div id="minPrice">Min Price: $4.00</div>
     </div>
-    <div id="bottombar"></div>
+    <div class="thirdbar" id="buttons" style="border-bottom-style:none">
+        <button type="button" id="leftButton"></button>
+        <button type="button" id="rightButton"><i class="material-icons" style="font-size: 130px;color:red;">highlight_off</i></button>
+    </div>
+</div>
+<div id="bottombar"></div>
 </body>
 <script src="https://npmcdn.com/parse/dist/parse.min.js"></script>
 <script src="BackendAPI.js"></script>
