@@ -9,7 +9,7 @@ body {
     height: 5vh;
     margin: 0px;
     padding: 0px;
-    background-color: aqua;
+    background-color:#ff8f00;
 }
 
 #logo {
@@ -21,24 +21,35 @@ body {
     float: left;
 }
 
-#toolbar-options {
-    overflow: hidden;   
-    background-color: blue;
+#logo-img {
+    position: relative;
 }
 
 #user {
     align-self: right;
-    margin-left: 90%; 
-    width: 10%;
+    margin-left: 70%; 
+    width: 30%;
     height:100%;
-    background-color: azure;
     overflow: hidden;
 }
 
+ul#horizontal-list {
+	min-width: 200px;
+    list-style: none;
+}
+
+ul#horizontal-list li {
+    display: inline;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
 
 #listing-image {
     background: url("./clothes.jpg");
     width: 500px;
     height: 600px;
+    background-repeat: no-repeat;
 } 
