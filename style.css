@@ -68,13 +68,21 @@ ul#horizontal-list li {
 } 
 
 .userprofile {
-    margin-top: 35px;
-    margin-left: 50px;
-    height: 100px;
-    width: 100px;
+    margin-top: 5vh;
+    margin-right: 75px;
+    height: 150px;
+    width: 150px;
     background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
+    border-radius: 25%;
+    float: right;
+}
+
+.userdetails {
+    height: 80px;
+    margin-left: 75px;
+    vertical-align: middle;
+    line-height: 80px;
+    font-size: 32px;
 }
 
 #bottombar {
