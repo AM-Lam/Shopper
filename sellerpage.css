@@ -86,10 +86,15 @@ ul#horizontal-list li {
     margin-top: 547px;
 }
 
-#image {
-    display: grid;
-    background: url("./clothes0.jpg");
-    height: 100px;
+img {
+    display: block;
+    max-width:300px;
+    max-height:300px;
+    width: auto;
+    height: auto;
+    margin-left:auto;
+    margin-top:1%;
+    margin-right:auto;
 }
 
 #listcolumn {
@@ -158,4 +163,5 @@ ul#horizontal-list li {
     float:center;
     width:80%;
     padding:10%;
+    padding-top:2%;
 }
