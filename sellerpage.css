@@ -1,0 +1,161 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #E0E0E0;
+    margin: 0;
+    font-family: Open Sans, Arial, sans-serif;
+    overflow: hidden;
+}
+
+#toolbar {
+    width: 100%;
+    height: 7vh;
+    margin: 0px;
+    padding: 0px;
+    background-color:#ff8f00;
+}
+
+#logo {
+    width: 10%;
+    height: 100%;
+    align-self: left;
+    margin-right: 10px;
+    overflow: hidden;
+    float: left;
+}
+
+#logo-img {
+    position: relative;
+}
+
+#user {
+    align-self: right;
+    margin-left: 70%; 
+    width: 30%;
+    height: 100%;
+    overflow: hidden;
+}
+
+ul#horizontal-list {
+	min-width: 200px;
+    list-style: none;
+}
+
+ul#horizontal-list li {
+    display: inline;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.halfbar {
+    height: 100%;
+    width: 50%;
+    float: left;
+    background-color: #EEEEEE;
+}
+
+.thirdbar {
+    border-bottom-color: #ffc046;
+    border-bottom-style: solid;
+    position: relative;
+    height: 243px;
+    width: 100%;
+}
+
+#listing-image {
+    background: url("./clothes1.jpg");
+    height: 732px;
+} 
+
+.userprofile {
+    margin-top: 35px;
+    margin-left: 50px;
+    height: 100px;
+    width: 100px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#bottombar {
+    height: 220px;
+    width: 100%;
+    background-color: #c56000;
+    margin-top: 547px;
+}
+
+#image {
+    display: grid;
+    background: url("./clothes0.jpg");
+    height: 100px;
+}
+
+#listcolumn {
+    background: gray;
+    width: 100%;
+    margin-left: auto;
+    margin-bottom: 3%;
+    padding-bottom: 1%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas: "left middle";
+    font-display: bold;
+}
+
+#innercontainer1 {
+    background: gray;
+    grid-area: "left";
+    grid-template-rows: 33% 33% 33%;
+    width: 100%;
+}
+
+.constainer_list{
+    height:29%;
+    margin: 2%;
+}
+
+.constainer_list2{
+    align-content: center;
+    align-self: center;
+}
+
+#innercontainer2 {
+    background: gray;
+    grid-area: "right";
+    grid-template-rows: 33% 33%;
+    width: 100%;
+    float: right;
+}
+
+#squares {
+    /* display: inline-block; */
+    text-align:center;
+    font-size: 2em;
+    margin: 5%;
+    width: 90%;
+    border: 3px;
+}
+
+#button {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.box {
+    float: left;
+}
+
+#main_content {
+    overflow:auto; 
+    height: 800px;
+    float:center;
+    width:80%;
+    padding:10%;
+}
