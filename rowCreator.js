@@ -11,3 +11,4 @@ function appendPosts(){
    }
 
  appendPosts();
+ 

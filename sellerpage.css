@@ -92,14 +92,14 @@ ul#horizontal-list li {
     height: 100px;
 }
 
-#artpiece {
+#listcolumn {
     background: gray;
-    width: 75%;
+    width: 100%;
     margin-left: auto;
-    margin-right: 7%;
+    margin-bottom: 3%;
+    padding-bottom: 1%;
     display: grid;
-    padding:2%;
-    grid-template-columns: 33% 33%;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 100%;
     grid-template-areas: "left middle";
     font-display: bold;
@@ -108,22 +108,35 @@ ul#horizontal-list li {
 #innercontainer1 {
     background: gray;
     grid-area: "left";
+    grid-template-rows: 33% 33% 33%;
     width: 100%;
+}
+
+.constainer_list{
+    height:29%;
+    margin: 2%;
+}
+
+.constainer_list2{
+    align-content: center;
+    align-self: center;
 }
 
 #innercontainer2 {
     background: gray;
-    grid-area: "middle";
+    grid-area: "right";
+    grid-template-rows: 33% 33%;
     width: 100%;
+    float: right;
 }
 
 #squares {
-    display: inline-block;
-    margin: auto;
-    padding: 2%;
-    width: 100%;
-    border: 3px solid goldenrod;
-    background: lightsalmon;
+    /* display: inline-block; */
+    text-align:center;
+    font-size: 2em;
+    margin: 5%;
+    width: 90%;
+    border: 3px;
 }
 
 #button {
@@ -137,4 +150,12 @@ ul#horizontal-list li {
 
 .box {
     float: left;
+}
+
+#main_content {
+    overflow:auto; 
+    height: 800px;
+    float:center;
+    width:80%;
+    padding:10%;
 }

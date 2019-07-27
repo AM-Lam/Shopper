@@ -3,12 +3,13 @@
 nav {
     float: left;
     display: block;
-    width: 100px;
+    width: 10%;
     background: #fff;
     overflow: auto;
     position: fixed;
     height: 100%;
-    padding: 10px;
+    /* padding: 10px; */
+    padding-right: 0px;
     border-right: 1px solid #eee;
     /* box-shadow: 0 0 3px rgba(0,0,0,0.1); */
   }
