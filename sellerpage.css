@@ -89,7 +89,7 @@ ul#horizontal-list li {
 #image {
     display: grid;
     background: url("./clothes0.jpg");
-    height: 200px;
+    height: 100px;
 }
 
 #artpiece {
@@ -99,9 +99,9 @@ ul#horizontal-list li {
     margin-right: 7%;
     display: grid;
     padding:2%;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 33% 33%;
     grid-template-rows: 100%;
-    grid-template-areas: "left middle right";
+    grid-template-areas: "left middle";
     font-display: bold;
 }
 
@@ -117,27 +117,22 @@ ul#horizontal-list li {
     width: 100%;
 }
 
-#innercontainer3 {
-    background: gray;
-    grid-area: "right";
-    width: 100%;
-}
-
 #squares {
     display: inline-block;
     margin: auto;
     padding: 2%;
-    width: 80%;
+    width: 100%;
     border: 3px solid goldenrod;
     background: lightsalmon;
 }
+
 #button {
-    padding-top: 4%;
-    display: grid;
-    grid-area: "button";
     align-items: center;
     justify-content: center;
-    
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+
 }
 
 .box {
