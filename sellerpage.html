@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Shopper</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="sellerpage.css">
+    <link rel="stylesheet" href="nav.css">
+    <Meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+ </head>
+<body> 
+    
+    <div id="toolbar">
+        <div id="logo">
+            <img class="logo-img" src="logo.svg" alt="">
+        </div>
+
+        <div id="user">
+            <ul id="horizontal-list">
+                <li>Listings</li>
+                <li>History</li>
+                <li><img src="profile.jpg" alt="Profile"></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- </div><input type="checkbox" id="nav-trigger" class="nav-trigger" />
+    <label for="nav-trigger" class="navicon-button x">
+    <div class="navicon"></div>
+    </label>
+    <label for="nav-trigger" class="overlay"></label>
+
+    <div width = 10%>
+    <nav>
+        //buyer
+        <li class="nav-link nav-home-link">
+            //change the link
+            <a href="index.html">Home</a>
+        </li>
+        <li class="nav-heading">user</li>
+        <li class="nav-heading">
+            <span class="nav-item-type type-class">C</span>
+            <span class="nav-item-name">
+                <a href="Parse.html">buyer</a>
+            </span>
+        </li>
+        //seller
+        <li class="nav-item">
+            <span class="nav-item-type type-function">F</span>
+            <span class="nav-item-name">
+                <a href="Parse.html#.initialize">seller</a>
+            </span>
+        </li>
+    </nav>   
+</div> -->
+    <div id='main_content'>
+        <h1 align="center">Wilma Napangardi Poulson / Birds that live around Yuendumu (2A)
+            <div class="listImage" id="image">
+                <img  width="600" height="600" src="https://imcjb683ytotbq6ijepkeg0yqzr9bq.files-sashido.cloud/4d2757f98c8813af961a9c542ae753c5_3676-09.jpg">
+            </div>
+        </h1>
+
+        <div class="art" id="listcolumn">
+            <div id="innnercontainer1">
+                <div class="constainer_list" id="buyer">
+                    <b>buyerName</b>    JOhn Smith
+                </div>
+                <div class="constainer_list" id="location">
+                    <b>location</b>         CSE BUILDING
+                </div>
+                <div class="constainer_list" id="time">
+                    <b>time</b>             12 AM
+                </div>
+            </div>
+            <div id="innnercontainer2">
+                    <div class="constainer_list2" id="squares">
+                        <b>Price:</b>       about $2
+                    </div>
+                    <button class="constainer_list2" id="button">Accept</button>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+<script type="module" src="sellerpage.js"></script>
+<script type="text/javascript" src="rowCreator.js"></script>
+<script src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+<script src="BackendAPI.js"></script>
+<script src="backendInt.js"></script>
+</html>
