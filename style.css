@@ -96,10 +96,14 @@ ul#horizontal-list li {
     margin-right: auto;
     height: 150px;
     width: 150px;
-    background: url("./heart.jpg");
+    background: url("./shopit.jpg");
     background-size: cover;
     background-color: #EEEEEE;
     border-style: none;
+}
+
+#leftButton:hover {
+    background: url("./shopit_pressed.svg");
 }
 
 #rightButton {
