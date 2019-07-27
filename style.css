@@ -14,16 +14,17 @@ body {
 }
 
 #logo {
-    width: 10%;
+    width: 169px;
     height: 7vh;
     align-self: left;
     margin-right: 10px;
     overflow: hidden;
     float: left;
+    background: url('./logo.svg');
 }
 
-#logo-img {
-    position: relative;
+#logo:hover {
+    background-image: url('./logo_pressed.svg');
 }
 
 #user {
@@ -91,14 +92,19 @@ ul#horizontal-list li {
     font-size: 32px;
     color: white;
     margin-top: 5vh;
-    margin-left: 75px;
+    margin-left: 25px;
     margin-right: auto;
     height: 150px;
-    width: 150px;
-    background: url("./heart.jpg");
+    width: 420px;
+    background: url("./shopit.svg");
     background-size: cover;
     background-color: #EEEEEE;
     border-style: none;
+}
+
+#leftButton:hover {
+    background: url("./shopit_pressed.svg");
+    background-size: cover;
 }
 
 #rightButton {
