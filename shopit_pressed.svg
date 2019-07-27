@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 382.8 142.2" style="enable-background:new 0 0 382.8 142.2;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#941900;}
+	.st1{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st2{fill:#FFFFFF;}
+	.st3{font-family:'Futura-Bold';}
+	.st4{font-size:96.2264px;}
+	.st5{fill:none;}
+	.st6{fill:#FF4A3F;}
+	.st7{fill:#FD0203;}
+	.st8{font-size:94.2239px;}
+</style>
+<polyline class="st0" points="11.2,127.4 15.3,133.5 15.8,133.2 16.5,135.2 377.8,26 372.8,18.7 "/>
+<path class="st0" d="M303.6,142.2H32.9c-17.3,0-24.7-14-16.7-31.3L44.6,50c8.1-17.3,28.6-31.3,45.9-31.3h270.7
+	c17.3,0,24.7,14,16.7,31.3l-28.4,60.9C341.4,128.2,320.9,142.2,303.6,142.2z"/>
+<line class="st1" x1="-77" y1="152" x2="-77" y2="152"/>
+<text transform="matrix(0.6758 0 -0.4664 0.8846 22.0212 88.4595)" class="st2 st3 st4">$hopper</text>
+<path class="st5" d="M2,114.1"/>
+<path class="st5" d="M16,133.5"/>
+<path class="st5" d="M365.2,7.8"/>
+<path class="st5" d="M380.3,30.9"/>
+<path class="st5" d="M2,114.1"/>
+<path class="st5" d="M365.2,7.8"/>
+<path class="st5" d="M380.3,30.9"/>
+<path class="st5" d="M16,133.5"/>
+<path class="st6" d="M2.8,117.3"/>
+<path class="st7" d="M299,135.4H28.3c-17.3,0-24.7-14-16.7-31.3L40,43.3C48.1,26,68.6,12,85.9,12h270.7c17.3,0,24.7,14,16.7,31.3
+	l-28.4,60.9C336.8,121.4,316.3,135.4,299,135.4z"/>
+<text transform="matrix(0.6901 0 -0.4288 0.9034 26.6275 102.459)" class="st2 st3 st8">$HOP IT!</text>
+</svg>
