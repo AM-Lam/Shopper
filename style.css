@@ -1,35 +1,37 @@
 body {
     width: 100%;
     height: 100%;
-    margin:0px;
+    background-color: #E0E0E0;
+    margin: 0;
 }
 
 #toolbar {
     width: 100%;
-    height: 5vh;
+    height: 7vh;
     margin: 0px;
     padding: 0px;
     background-color:#ff8f00;
 }
 
 #logo {
-    width: 10%;
-    height: 100%;
+    width: 169px;
+    height: 7vh;
     align-self: left;
     margin-right: 10px;
     overflow: hidden;
     float: left;
+    background: url('./logo.svg');
 }
 
-#logo-img {
-    position: relative;
+#logo:hover {
+    background-image: url('./logo_pressed.svg');
 }
 
 #user {
     align-self: right;
     margin-left: 70%; 
     width: 30%;
-    height:100%;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -46,10 +48,76 @@ ul#horizontal-list li {
     margin-right: 20px;
 }
 
+.halfbar {
+    height: 100%;
+    width: 50%;
+    float: left;
+    background-color: #EEEEEE;
+}
+
+.thirdbar {
+    border-bottom-color: #ffc046;
+    border-bottom-style: solid;
+    position: relative;
+    height: 243px;
+    width: 100%;
+}
 
 #listing-image {
-    background: url("./clothes.jpg");
-    width: 500px;
-    height: 600px;
-    background-repeat: no-repeat;
+    background: url("./clothes1.jpg");
+    height: 732px;
 } 
+
+.userprofile {
+    margin-top: 5vh;
+    margin-right: 75px;
+    height: 150px;
+    width: 150px;
+    background-color: #bbb;
+    border-radius: 25%;
+    float: right;
+}
+
+.userdetails {
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    line-height: 80px;
+    text-align: center;
+    font-size: 32px;
+}
+
+#leftButton {
+    font-size: 32px;
+    color: white;
+    margin-top: 5vh;
+    margin-left: 75px;
+    margin-right: auto;
+    height: 150px;
+    width: 150px;
+    background: url("./heart.jpg");
+    background-size: cover;
+    background-color: #EEEEEE;
+    border-style: none;
+}
+
+#rightButton {
+    font-size: 32px;
+    color: white;
+    margin-top: 5vh;
+    float: right;
+    margin-right: 75px;
+    height: 150px;
+    width: 150px;
+    background-color: #bbb;
+    border-radius: 25%;
+    border-style: solid;
+}
+
+#bottombar {
+    height: 220px;
+    width: 100%;
+    background-color: #c56000;
+    margin-top: 547px;
+}
