@@ -101,11 +101,13 @@ function getImageObjectFromFile(name,file) {
 }
 
 function getUserObject(objectId) {
-    var User = new Parse.Object("User");
+    var User = new Parse.Object.extend("User");
     var query = new Parse.Query(User);
     var result;
     query.get(objectId).then((user) => {
+        console.log(user);
         result = user;
+        console.log(result);
     }, (error) => {
         alert('Failed to create new object, with error code: ' + error.message);
     });

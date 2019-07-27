@@ -19,19 +19,25 @@ let changeListingImage = function(listing) {
     listingImage.style.background = `url(${url})`;
 }
 
-let changeUserDetails = function(listing) {
-    let profilePic = document.getElementsByClassName("userprofile")[0];
+let changeUserDetails = function(name) {
+    //let profilePic = document.getElementsByClassName("userprofile")[0];
     let username = document.getElementById("username");
-    profilePic.style.backgroundColor = listing.userColor;
-    username.innerText = listing.userName;
+    //profilePic.style.backgroundColor = listing.userColor;
+    username.innerText = name;
 }
 
 let loadedListings = loadListings();
+
 listingImage.addEventListener("click", event => {
     let randomListing = getRandomListing(loadedListings);
     changeListingImage(randomListing);
-    let sellerId;
-    console.log(getSellerObject(sellerId));
+    let user = randomListing.get("seller");
+    let name;
+    user.fetch().then(fetchedUser => {
+        name = fetchedUser.getUsername();
+        changeUserDetails(name)
+        console.log(name);
+    })
 });
 
 /*let listing0 = {
