@@ -1,5 +1,3 @@
-let listingImage = document.getElementById("listing-image");
-
 let loadListings = function() {
     let listings = [];
     getListings().then(result => {
@@ -19,9 +17,14 @@ let changeListingImage = function(listing) {
     listingImage.style.background = `url(${url})`;
 }
 
+let changeProfilePic = function(user) {
+    let url = user.get("profileImage")._url;
+    profilePic.style.background = `url(${url}) no-repeat center`;
+}
+
 let changeListingPrice = function(listing) {
     let price = listing.get("minPrice");
-    document.getElementById("minPrice").innerText = "Min price: " + price + ".00";
+    document.getElementById("minPrice").innerText = "Min price: $" + price + ".00";
 }
 
 let changeUserDetails = function(name) {
@@ -31,9 +34,18 @@ let changeUserDetails = function(name) {
     username.innerText = name;
 }
 
+let changeDescriptionText = function(listing) {
+    descriptionText.innerText = listing.get("itemDesc");
+}
+
+
+let listingImage = document.getElementById("listing-image");
+let nextButton = document.getElementById("rightButton");
+let profilePic = document.getElementById("profilePic");
+let descriptionText = document.getElementById("descriptionText");
 let loadedListings = loadListings();
 
-listingImage.addEventListener("click", event => {
+let nextListing = function()  {
     let randomListing = getRandomListing(loadedListings);
     changeListingImage(randomListing);
     let user = randomListing.get("seller");
@@ -42,9 +54,15 @@ listingImage.addEventListener("click", event => {
         name = fetchedUser.getUsername();
         changeUserDetails(name);
         changeListingPrice(randomListing);
+        changeProfilePic(fetchedUser);
+        changeDescriptionText(randomListing);
         console.log(name);
-    })
-});
+    });
+}
+
+
+nextButton.addEventListener("click", nextListing);
+console.log(loadedListings);
 
 /*let listing0 = {
     listingNo: 0,
