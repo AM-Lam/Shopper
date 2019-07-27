@@ -88,6 +88,20 @@ ul#horizontal-list li {
     font-size: 32px;
 }
 
+#descriptionTitle {
+    font-size: 32px;
+    text-align: center;
+}
+
+#descriptionText {
+    margin: 3px;
+}
+
+#minPrice {
+    font-size: 26px;
+    float: right;
+}
+
 #leftButton {
     font-size: 32px;
     color: white;
@@ -96,14 +110,14 @@ ul#horizontal-list li {
     margin-right: auto;
     height: 150px;
     width: 420px;
-    background: url("./shopit.svg");
+    background: url("./shopit.png");
     background-size: cover;
     background-color: #EEEEEE;
     border-style: none;
 }
 
 #leftButton:hover {
-    background: url("./shopit_pressed.svg");
+    background: url("./shopit_pressed.png");
     background-size: cover;
 }
 

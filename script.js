@@ -11,12 +11,17 @@ let loadListings = function() {
 }
 
 let getRandomListing = function(loadedListings) {
-    return loadedListings[Math.floor(Math.random() * (loadedListings.length - 1))];
+    return loadedListings[Math.floor(Math.random() * loadedListings.length)];
 }
 
 let changeListingImage = function(listing) {
     let url = listing.get("itemImage")._url;
     listingImage.style.background = `url(${url})`;
+}
+
+let changeListingPrice = function(listing) {
+    let price = listing.get("minPrice");
+    document.getElementById("minPrice").innerText = "Min price: " + price + ".00";
 }
 
 let changeUserDetails = function(name) {
@@ -35,7 +40,8 @@ listingImage.addEventListener("click", event => {
     let name;
     user.fetch().then(fetchedUser => {
         name = fetchedUser.getUsername();
-        changeUserDetails(name)
+        changeUserDetails(name);
+        changeListingPrice(randomListing);
         console.log(name);
     })
 });
