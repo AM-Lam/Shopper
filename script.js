@@ -35,7 +35,7 @@ listingImage.addEventListener("click", event => {
     let name;
     user.fetch().then(fetchedUser => {
         name = fetchedUser.getUsername();
-        changeUserDetails(name)
+        changeUserDetails(name);
         console.log(name);
     })
 });

@@ -36,8 +36,9 @@ async function getListings() {
     const Listings = Parse.Object.extend("Listings");
     var query= new Parse.Query(Listings);
     const results = await query.find();
-    alert("Successfully retrieved " + results.length + " scores.");
+    // alert("Successfully retrieved " + results.length + " scores.");
     // Do something with the returned Parse.Object values
+
     // for (let i = 0; i < results.length; i++) {
     //     var object = results[i];
     //     alert(object.id + ' - ' + object.get('itemDesc'));
@@ -50,7 +51,7 @@ async function getSellerBargains(seller) {
     var query = new Parse.Query(Bargains);
     query.equalTo("seller", seller);
     const results = await query.find();
-    alert("Successfully retrieved " + results.length + " scores.");
+    // alert("Successfully retrieved " + results.length + " scores.");
     // Do something with the returned Parse.Object values
     // for (let i = 0; i < results.length; i++) {
     //     var object = results[i];
@@ -64,7 +65,7 @@ async function getBuyerBargains(buyer) {
     var query = new Parse.Query(Bargains);
     query.equalTo("buyer", buyer);
     const results = await query.find();
-    alert("Successfully retrieved " + results.length + " scores.");
+    // alert("Successfully retrieved " + results.length + " scores.");
     // Do something with the returned Parse.Object values
     // for (let i = 0; i < results.length; i++) {
     //     var object = results[i];
@@ -113,8 +114,10 @@ function addListing(name, description, image, seller, minPrice, maxPrice) {
         maxPrice: maxPrice
     }).then((response) => {
         // Execute any logic that should take place after the object is saved.
-        alert('New object created with objectId: ' + response.id);
+        // alert('New object created with objectId: ' + response.id);
     }, (error) => {
+
+
         // Execute any logic that should take place if the save fails.
         // error is a Parse.Error with an error code and message.
         alert('Failed to create new object, with error code: ' + error.message);
