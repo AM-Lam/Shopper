@@ -99,3 +99,19 @@ function getImageURLFromObject(imageObject) {
 function getImageObjectFromFile(name,file) {
     return new Parse.File(name, file);
 }
+
+function getUserObject(objectId) {
+    var User = new Parse.Object("User");
+    var query = new Parse.Query(User);
+    var result;
+    query.get(objectId).then((user) => {
+        result = user;
+    }, (error) => {
+        alert('Failed to create new object, with error code: ' + error.message);
+    });
+    return result;
+}
+
+function getSellerObject(userObject) {
+    return userObject.get("sellerNumber");
+}
